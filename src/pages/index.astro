@@ -5,9 +5,11 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Welcome to Astro.">
 	<main>
 		<div class="information-container">
-			<div>Imagen yo</div>
+			<div class="image-container">
+				<img src="../../public/mijel.jpg" alt="Mijelpalcabello image">
+			</div>
 			<div class="name-container">
-fas
+				<span>@mijelpalcabello</span>
 			</div>
 		</div>
 	</main>
@@ -29,7 +31,24 @@ fas
 		padding-top: 20px;
 	}
 
+	.information-container .image-container{
+		text-align: center;
+	}
+
+	.information-container .image-container img{
+		width: 140px;	
+		border: 1px solid white;
+	}
+
 	.name-container {
-		background-color: skyblue;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.name-container span {	
+		padding: 4px;
+		background-color: grey;
+		border-radius: 15px;
+		border: 1px solid white;		 
 	}
 </style>
