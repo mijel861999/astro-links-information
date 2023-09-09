@@ -15,8 +15,8 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 
 		<div class="links-container">
-			<Card href="google.com" title="youtube" icon="icon" />
-			<Card href="google.com" title="Github" icon="icon" />
+			<Card href="https://github.com/mijel861999" title="Github" icon="icon" />
+			<Card href="https://twitter.com/MijelDev" title="Twitter" icon="icon" />
 		</div>
 	</main>
 </Layout>
@@ -37,23 +37,33 @@ import Layout from '../layouts/Layout.astro';
 		padding-top: 20px;
 	}
 
-	.information-container .image-container{
+	.information-container .image-container {
 		text-align: center;
+		width: 130px; /* Establece el ancho deseado para el cuadro cuadrado */
+		height: 100px; /* Establece la misma altura que el ancho */
+		border-radius: 10px; /* Opcional: añade bordes redondeados al cuadro */
+		border: 2px solid white; /* Opcional: añade un borde blanco */
+		display: flex; /* Usa flexbox para centrar la imagen vertical y horizontalmente */
+		justify-content: center; /* Centra horizontalmente */
+		align-items: center; /* Centra verticalmente */
+		overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde del cuadro */
+		background-color: #fff; /* Fondo blanco */
+		margin: auto;
 	}
 
-	.information-container .image-container img{
-		width: 140px;	
-		border: 1px solid white;
+	.information-container .image-container img {
+		max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+		max-height: 100%; /* Asegura que la imagen no supere la altura del contenedor */
 	}
 
 	.name-container {
-		margin-top: 10px;
+		margin-top: 30px;
 		text-align: center;
 	}
 
 	.name-container span {	
-		padding: 4px;
-		background-color: grey;
+		padding: 5px 10px;
+		background-color: rgba(0, 0, 0, 0.8);
 		border-radius: 15px;
 		border: 1px solid white;		 
 	}
